@@ -1,0 +1,23 @@
+package com.example.meditation
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import com.example.meditation.ui.ui.theme.HomeScreen
+//import com.example.meditation.ui.ui.MeditationTheme
+//import com.example.meditation.ui.ui.theme.MeditationTheme
+import com.example.meditation.ui.ui.theme.theme.MeditationTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MeditationTheme {
+                // A surface container using the 'background' color from the theme
+               HomeScreen()
+
+            }
+        }
+    }
+}
+
